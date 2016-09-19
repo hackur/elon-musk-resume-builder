@@ -2,7 +2,7 @@
   "name": "elon-musk-resume-builder",
   "productName": "ElonMuskResumeBuilder",
   "version": "0.0.0",
-  "description": "My badass app",
+  "description": "Generates a resume that looks like Elon Musk's famous one-pager.",
   "license": "MIT",
   "repository": "hackur/elon-musk-resume-builder",
   "author": {
@@ -17,10 +17,10 @@
   "scripts": {
     "test": "xo",
     "build": "export NODE_ENV='production'; electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --all --version=$npm_package_electronVersion",
-    "build-sass": "node-sass --include-path src/styles --source-map index.map src/styles/index.scss index.css",
+    "build-sass": "node-sass --include-path src/stylesheets --source-map index.map src/stylesheets/main.scss index.css",
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
     "start": "export NODE_ENV='dev'; electron . & webpack --watch --progress --colors --output-source-map-file & npm run watch-sass"
-    
+
   },
   "files": [
     "index.js",

@@ -1,26 +1,34 @@
-html,
-body {
-  padding: 0;
-  margin: 0; }
-
-header {
-  position: absolute;
-  width: 500px;
-  height: 250px;
-  top: 50%;
-  left: 50%;
-  margin-top: -125px;
-  margin-left: -250px;
-  text-align: center; }
-
-header h1 {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 60px;
-  font-weight: 100;
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:300,400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext';
+body,
+html {
   margin: 0;
   padding: 0; }
 
-.foo {
-  background: #000; }
+body.editor {
+  background-color: #aaaaaa;
+  text-align: center;
+  padding: 25px; }
+  body.editor iframe.document {
+    border: none;
+    background: white;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: middle;
+    display: inline-block;
+    width: 80vh;
+    height: calc(100vh - 50px); }
+
+body.resume header {
+  height: 10.25vh;
+  padding: 2.15vh 0;
+  border-bottom: 0.25vh solid #f14e40; }
+
+body.resume header h1 {
+  margin: 0;
+  padding: 0.1vh 0 1.5vh 1vh;
+  border-left: 3vh solid #374457;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-size: 2.75vh;
+  font-weight: 400;
+  line-height: 3vh; }
 
 /*# sourceMappingURL=index.map */

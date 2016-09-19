@@ -7,12 +7,12 @@ require('crash-reporter').start();
 
 // adds debug features like hotkeys for triggering dev tools and reload
 require('electron-debug')();
+
 var indexFile = `${__dirname}/index.html`;
 
 if (process.env['NODE_ENV'] == 'dev') {
 	indexFile = "http://localhost:9999";
 }
-
 
 // prevent window being garbage collected
 let mainWindow;
@@ -26,9 +26,11 @@ function onClosed() {
 function createMainWindow() {
 	const win = new BrowserWindow({
 		width: 850,
-		height: 1100
+		height: 1100,
+        minWidth: 425,
+        minHeight: 550
 	});
-	
+
 	if (process.env['NODE_ENV'] == 'dev') {
 		// we need to wait until browsersync is ready
 		setTimeout(function() {
@@ -37,9 +39,11 @@ function createMainWindow() {
 	} else {
 		win.loadUrl(`file:${indexFile}`);
 	}
-	
-	
+
 	win.on('closed', onClosed);
+
+    // Only works on OS X
+    win.setAspectRatio(8.5/11, []);
 
 	return win;
 }
