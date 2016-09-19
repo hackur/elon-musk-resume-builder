@@ -1,9 +1,14 @@
 'use strict';
-const app = require('app');
-const BrowserWindow = require('browser-window');
+const electron = require('electron')
+const {app, BrowserWindow, crashReporter} = electron
 
 // report crashes to the Electron project
-require('crash-reporter').start();
+crashReporter.start({
+  productName: 'elon-musk-resume-builder',
+  companyName: 'JeremySarda.com',
+  submitURL: 'https://resume.jeremysarda.com/crash-report',
+  autoSubmit: true
+});
 
 // adds debug features like hotkeys for triggering dev tools and reload
 require('electron-debug')();
@@ -25,19 +30,20 @@ function onClosed() {
 
 function createMainWindow() {
 	const win = new BrowserWindow({
-		width: 850,
-		height: 1100,
+		width: 850*0.75,
+		height: 1100*0.75,
         minWidth: 425,
-        minHeight: 550
+        minHeight: 550,
+        titleBarStyle: 'hidden-inset'
 	});
 
 	if (process.env['NODE_ENV'] == 'dev') {
 		// we need to wait until browsersync is ready
 		setTimeout(function() {
-			win.loadUrl(indexFile);
+			win.loadURL(indexFile);
 		}, 5000);
 	} else {
-		win.loadUrl(`file:${indexFile}`);
+		win.loadURL(`file:${indexFile}`);
 	}
 
 	win.on('closed', onClosed);

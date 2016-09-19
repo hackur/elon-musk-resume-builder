@@ -1,8 +1,14 @@
 @import 'https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:300,400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext';
 
-$body-background-color: #aaaaaa;
+/// Editor Variables
+$editor-background-color: #aaaaaa;
+$editor-background-color-medium: rgba(darken($editor-background-color, 75%),0.25);
+$editor-background-color-light: rgba(darken($editor-background-color, 25%),0.9);
 
-$primary-font: 'Ubuntu', Helvetica, sans-serif;
+$editor-primary-font: 'Open Sans', Helvetica, sans-serif;
 
-$primary-color: #f14e40;
-$secondary-color: #374457;
+/// Resume Variables
+$resume-primary-font: 'Ubuntu', Helvetica, sans-serif;
+
+$resume-primary-color: #f14e40;
+$resume-secondary-color: #374457;

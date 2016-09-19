@@ -1,0 +1,27 @@
+
+body.resume {
+
+	header {
+		height: 10.25vh;
+		padding: 2.15vh 0;
+		border-bottom: 0.25vh solid $resume-primary-color;
+
+        h1 {
+    		margin: 0;
+    		padding: 0.09vh 0 0.8vh 1vh;
+    		border-left: 3vh solid $resume-secondary-color;
+    		font-family: $resume-primary-font;
+    		font-size: 2.75vh;
+    		font-weight: 400;
+    		line-height: 3vh;
+    	}
+
+        p.objective {
+            margin-left: 4vh;
+            font-size: 1vh;
+        }
+	}
+
+
+
+}

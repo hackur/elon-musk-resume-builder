@@ -1,46 +1,7 @@
-@import "variables";
+@import "variables", "mixins", "editor", "resume";
 
 body,
 html {
 	margin: 0;
 	padding: 0;
-}
-
-body.editor {
-	background-color: $body-background-color;
-    text-align: center;
-    padding: 25px;
-
-	iframe.document {
-		border: none;
-		background: white;
-
-		box-shadow: 0 0 25px 0 rgba(darken($body-background-color, 75%),0.25);
-
-		vertical-align: middle;
-		display: inline-block;
-
-        width: 80vh;
-        height: calc(100vh - 50px);
-	}
-}
-
-body.resume {
-
-	header {
-		height: 10.25vh;
-		padding: 2.15vh 0;
-		border-bottom: 0.25vh solid $primary-color;
-	}
-
-	header h1 {
-		margin: 0;
-		padding: 0.1vh 0 1.5vh 1vh;
-		border-left: 3vh solid $secondary-color;
-		font-family: $primary-font;
-		font-size: 2.75vh;
-		font-weight: 400;
-		line-height: 3vh;
-	}
-
 }

@@ -1,0 +1,5 @@
+/// Make element act as a handle that can be used to drag the parent window.
+@mixin dragHandle {
+	-webkit-user-select: none;
+	-webkit-app-region: drag;
+}
