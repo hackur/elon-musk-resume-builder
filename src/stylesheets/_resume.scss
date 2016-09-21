@@ -144,10 +144,6 @@ body.resume {
 			padding: 0.7vh 0 0 4vh;
 		}
 
-        .work-experience {
-
-        }
-
         .education {
             h2 {
                 padding-top:2vh;
@@ -160,10 +156,99 @@ body.resume {
             }
         }
 
+        .skills-and-competences {
+            padding: 0 4vh 0 4vh;
+
+            > div {
+                clear: both;
+                height: 3vh;
+                width: 100%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            > div.scale {
+                height: 2vh;
+                .label {
+                    display: block;
+                    float: left;
+    				margin: 0;
+    				padding: 0 2.5% 0 0;
+                    text-align: right;
+    				font-size: 1vh;
+                    width: 37.5%;
+                }
+                .progress-bar {
+                    border: none;
+    				margin: 0;
+    				padding: 0;
+                    display: block;
+                    float: left;
+                    width: 60%;
+                    height: 1vh;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    border-right: 1px solid $resume-primary-color;
+                    > span {
+                        display: block;
+                        width: 33%;
+                        float:left;
+                        background-color: transparent;
+                        box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        border-left: 1px solid $resume-primary-color;
+                    }
+                }
+            }
+
+            .label {
+                display: block;
+                float: left;
+				margin: 0;
+				padding: 0 2.5% 0 0;
+                text-align: right;
+				font-size: 1vh;
+                width: 37.5%;
+            }
+
+            .progress-bar {
+				margin: 0;
+				padding: 0;
+                display: block;
+                float: left;
+                width: 60%;
+                height: 1.4vh;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                border: 1px solid $resume-primary-color;
+
+                span {
+                    height: 100%;
+                    display: block;
+                    float: left;
+                    background-color: $resume-primary-color;
+                }
+            }
+        }
+
 		.column {
 			width: 50%;
 			float: left;
 		}
+
+        .column-right {
+            h2 {
+                margin: 0;
+                padding-left: 0;
+            }
+            .heading {
+                border: none;
+                padding: 0;
+            }
+        }
 
 		width: 100%;
 		float: left;

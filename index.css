@@ -162,8 +162,77 @@ body.resume {
       margin: 0; }
     body.resume main .education .heading {
       margin: 2vh 0 0 0; }
+    body.resume main .skills-and-competences {
+      padding: 0 4vh 0 4vh; }
+      body.resume main .skills-and-competences > div {
+        clear: both;
+        height: 3vh;
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle; }
+      body.resume main .skills-and-competences > div.scale {
+        height: 2vh; }
+        body.resume main .skills-and-competences > div.scale .label {
+          display: block;
+          float: left;
+          margin: 0;
+          padding: 0 2.5% 0 0;
+          text-align: right;
+          font-size: 1vh;
+          width: 37.5%; }
+        body.resume main .skills-and-competences > div.scale .progress-bar {
+          border: none;
+          margin: 0;
+          padding: 0;
+          display: block;
+          float: left;
+          width: 60%;
+          height: 1vh;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          border-right: 1px solid #f14e40; }
+          body.resume main .skills-and-competences > div.scale .progress-bar > span {
+            display: block;
+            width: 33%;
+            float: left;
+            background-color: transparent;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border-left: 1px solid #f14e40; }
+      body.resume main .skills-and-competences .label {
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0 2.5% 0 0;
+        text-align: right;
+        font-size: 1vh;
+        width: 37.5%; }
+      body.resume main .skills-and-competences .progress-bar {
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: left;
+        width: 60%;
+        height: 1.4vh;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 1px solid #f14e40; }
+        body.resume main .skills-and-competences .progress-bar span {
+          height: 100%;
+          display: block;
+          float: left;
+          background-color: #f14e40; }
     body.resume main .column {
       width: 50%;
       float: left; }
+    body.resume main .column-right h2 {
+      margin: 0;
+      padding-left: 0; }
+    body.resume main .column-right .heading {
+      border: none;
+      padding: 0; }
 
 /*# sourceMappingURL=index.map */
