@@ -1,11 +1,6 @@
 body.resume {
-	font-family: $resume-primary-font;
-
 	header {
 		.intro-container {
-			float: left;
-			width: 37.5%;
-
 			h1 {
 				margin: 0;
 				padding: 0.09vh 0 0.8vh 1vh;
@@ -20,33 +15,142 @@ body.resume {
 				padding: 5px 0 0;
 				font-size: 1vh;
 			}
+			width: 37.5%;
+			float: left;
 		}
 
 		.photo-container {
-			float: left;
-			width: 25%;
-			text-align: center;
-
 			.photo {
+				-webkit-border-radius: 100px;
+				-moz-border-radius: 100px;
+				display: inline-block;
 				width: 10.25vh;
 				height: 10.25vh;
 				border: 3px solid $resume-secondary-color;
-				display: inline-block;
-				vertical-align: middle;
+				border-radius: 100px;
 				background-image: url('src/images/photo.jpg');
 				background-size: auto 100%;
-				border-radius: 100px;
-				-webkit-border-radius: 100px;
-				-moz-border-radius: 100px;
+				vertical-align: middle;
 			}
+			width: 25%;
+			float: left;
+			text-align: center;
 		}
 
 		.contact-container {
-			float: left;
+			ul {
+				> li {
+					> i {
+						display: block;
+						position: relative;
+						bottom: -0.8vh;
+						width: 2vh;
+						padding-left: 0.3vh;
+						float: right;
+						color: $resume-primary-color;
+						font-size: 1.5vh;
+						text-align: center;
+					}
+					display: block;
+					margin: 0;
+					padding: 0;
+					float: right;
+					clear: both;
+					line-height: 2.5vh;
+				}
+				margin: 0 3vh 0 0;
+				padding: 0;
+				float: right;
+				font-size: 1.1vh;
+				list-style: none;
+				text-align: right;
+			}
 			width: 37.5%;
+			float: left;
 		}
-		height: 10.25vh;
+
+        height: 10.25vh;
 		padding: 2.15vh 0;
 		border-bottom: 0.25vh solid $resume-primary-color;
 	}
+
+	main {
+		h2 {
+			margin: 0;
+			padding: 0 0 0 4vh;
+			font-size: 1.75vh;
+			font-weight: 800;
+			line-height: 4.6vh;
+		}
+
+		.heading {
+            border-left: 3vh solid $resume-primary-color;
+            padding-left: 1vh;
+
+            span {
+                display:block;
+            }
+
+            span.super-left {
+                color: $resume-primary-color;
+                width: 50%;
+                font-size: 0.85vh;
+                text-align: left;
+                float: left;
+            }
+
+            span.super-right {
+                color: $resume-primary-color;
+                width: 50%;
+                font-size: 0.85vh;
+                text-align: right;
+                float: right;
+            }
+
+            span.title {
+                font-weight: 600;
+                font-size: 1.3vh;
+                line-height: 1.6vh;
+            }
+
+            span.sub-title {
+                font-size: 1.3vh;
+                line-height: 1.6vh;
+            }
+        }
+
+        .body {
+            margin: 0;
+            padding: 0.7vh 0 0 4vh;
+
+            span.title {
+                display: block;
+                color: $resume-primary-color;
+                font-size: 0.85vh;
+    			margin: 0;
+                padding: 0;
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+                font-size: 1vh;
+            }
+        }
+
+		.left-column {
+			width: 50%;
+			float: left;
+		}
+
+		.right-column {
+			width: 50%;
+			float: left;
+		}
+
+        width: 100%;
+		float: left;
+	}
+
+    font-family: $resume-primary-font;
 }

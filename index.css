@@ -1,4 +1,18 @@
 @import 'https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:300,400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css';
+body,
+html {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  ul > li {
+    margin: 0;
+    padding: 0; }
+
 body.editor {
   padding: 55px 25px 25px;
   background-color: #aaaaaa;
@@ -36,8 +50,8 @@ body.resume {
     padding: 2.15vh 0;
     border-bottom: 0.25vh solid #f14e40; }
     body.resume header .intro-container {
-      float: left;
-      width: 37.5%; }
+      width: 37.5%;
+      float: left; }
       body.resume header .intro-container h1 {
         margin: 0;
         padding: 0.09vh 0 0.8vh 1vh;
@@ -50,27 +64,98 @@ body.resume {
         padding: 5px 0 0;
         font-size: 1vh; }
     body.resume header .photo-container {
-      float: left;
       width: 25%;
+      float: left;
       text-align: center; }
       body.resume header .photo-container .photo {
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        display: inline-block;
         width: 10.25vh;
         height: 10.25vh;
         border: 3px solid #374457;
-        display: inline-block;
-        vertical-align: middle;
+        border-radius: 100px;
         background-image: url("src/images/photo.jpg");
         background-size: auto 100%;
-        border-radius: 100px;
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px; }
+        vertical-align: middle; }
     body.resume header .contact-container {
-      float: left;
-      width: 37.5%; }
-
-body,
-html {
-  margin: 0;
-  padding: 0; }
+      width: 37.5%;
+      float: left; }
+      body.resume header .contact-container ul {
+        margin: 0 3vh 0 0;
+        padding: 0;
+        float: right;
+        font-size: 1.1vh;
+        list-style: none;
+        text-align: right; }
+        body.resume header .contact-container ul > li {
+          display: block;
+          margin: 0;
+          padding: 0;
+          float: right;
+          clear: both;
+          line-height: 2.5vh; }
+          body.resume header .contact-container ul > li > i {
+            display: block;
+            position: relative;
+            bottom: -0.8vh;
+            width: 2vh;
+            padding-left: 0.3vh;
+            float: right;
+            color: #f14e40;
+            font-size: 1.5vh;
+            text-align: center; }
+  body.resume main {
+    width: 100%;
+    float: left; }
+    body.resume main h2 {
+      margin: 0;
+      padding: 0 0 0 4vh;
+      font-size: 1.75vh;
+      font-weight: 800;
+      line-height: 4.6vh; }
+    body.resume main .heading {
+      border-left: 3vh solid #f14e40;
+      padding-left: 1vh; }
+      body.resume main .heading span {
+        display: block; }
+      body.resume main .heading span.super-left {
+        color: #f14e40;
+        width: 50%;
+        font-size: 0.85vh;
+        text-align: left;
+        float: left; }
+      body.resume main .heading span.super-right {
+        color: #f14e40;
+        width: 50%;
+        font-size: 0.85vh;
+        text-align: right;
+        float: right; }
+      body.resume main .heading span.title {
+        font-weight: 600;
+        font-size: 1.3vh;
+        line-height: 1.6vh; }
+      body.resume main .heading span.sub-title {
+        font-size: 1.3vh;
+        line-height: 1.6vh; }
+    body.resume main .body {
+      margin: 0;
+      padding: 0.7vh 0 0 4vh; }
+      body.resume main .body span.title {
+        display: block;
+        color: #f14e40;
+        font-size: 0.85vh;
+        margin: 0;
+        padding: 0; }
+      body.resume main .body p {
+        margin: 0;
+        padding: 0;
+        font-size: 1vh; }
+    body.resume main .left-column {
+      width: 50%;
+      float: left; }
+    body.resume main .right-column {
+      width: 50%;
+      float: left; }
 
 /*# sourceMappingURL=index.map */
