@@ -113,27 +113,30 @@ body.resume {
       padding: 0 0 0 4vh;
       font-size: 1.75vh;
       font-weight: 800;
-      line-height: 4.6vh; }
+      line-height: 4.62vh; }
+    body.resume main ul > li:first-child .heading {
+      margin-top: 0; }
     body.resume main .heading {
-      border-left: 3vh solid #f14e40;
-      padding-left: 1vh; }
+      margin: 1.15vh 0 0 0;
+      padding: 0 0 0 1vh;
+      border-left: 3vh solid #f14e40; }
       body.resume main .heading span {
         display: block; }
       body.resume main .heading span.super-left {
-        color: #f14e40;
         width: 50%;
+        float: left;
+        color: #f14e40;
         font-size: 0.85vh;
-        text-align: left;
-        float: left; }
+        text-align: left; }
       body.resume main .heading span.super-right {
-        color: #f14e40;
         width: 50%;
+        float: right;
+        color: #f14e40;
         font-size: 0.85vh;
-        text-align: right;
-        float: right; }
+        text-align: right; }
       body.resume main .heading span.title {
-        font-weight: 600;
         font-size: 1.3vh;
+        font-weight: 600;
         line-height: 1.6vh; }
       body.resume main .heading span.sub-title {
         font-size: 1.3vh;
@@ -143,14 +146,14 @@ body.resume {
       padding: 0.7vh 0 0 4vh; }
       body.resume main .body span.title {
         display: block;
-        color: #f14e40;
-        font-size: 0.85vh;
         margin: 0;
-        padding: 0; }
+        padding: 0;
+        color: #f14e40;
+        font-size: 0.85vh; }
       body.resume main .body p {
         margin: 0;
         padding: 0;
-        font-size: 1vh; }
+        font-size: 1.08vh; }
     body.resume main .left-column {
       width: 50%;
       float: left; }

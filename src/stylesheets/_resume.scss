@@ -68,8 +68,7 @@ body.resume {
 			width: 37.5%;
 			float: left;
 		}
-
-        height: 10.25vh;
+		height: 10.25vh;
 		padding: 2.15vh 0;
 		border-bottom: 0.25vh solid $resume-primary-color;
 	}
@@ -80,63 +79,68 @@ body.resume {
 			padding: 0 0 0 4vh;
 			font-size: 1.75vh;
 			font-weight: 800;
-			line-height: 4.6vh;
+			line-height: 4.62vh;
 		}
 
+        ul > li:first-child .heading {
+            margin-top: 0;
+        }
+
 		.heading {
-            border-left: 3vh solid $resume-primary-color;
-            padding-left: 1vh;
 
-            span {
-                display:block;
-            }
+			span {
+				display: block;
+			}
 
-            span.super-left {
-                color: $resume-primary-color;
-                width: 50%;
-                font-size: 0.85vh;
-                text-align: left;
-                float: left;
-            }
+			span.super-left {
+				width: 50%;
+				float: left;
+				color: $resume-primary-color;
+				font-size: 0.85vh;
+				text-align: left;
+			}
 
-            span.super-right {
-                color: $resume-primary-color;
-                width: 50%;
-                font-size: 0.85vh;
-                text-align: right;
-                float: right;
-            }
+			span.super-right {
+				width: 50%;
+				float: right;
+				color: $resume-primary-color;
+				font-size: 0.85vh;
+				text-align: right;
+			}
 
-            span.title {
-                font-weight: 600;
-                font-size: 1.3vh;
-                line-height: 1.6vh;
-            }
+			span.title {
+				font-size: 1.3vh;
+				font-weight: 600;
+				line-height: 1.6vh;
+			}
 
-            span.sub-title {
-                font-size: 1.3vh;
-                line-height: 1.6vh;
-            }
-        }
+			span.sub-title {
+				font-size: 1.3vh;
+				line-height: 1.6vh;
+			}
 
-        .body {
-            margin: 0;
-            padding: 0.7vh 0 0 4vh;
+			margin: 1.15vh 0 0 0;
+			padding: 0 0 0 1vh;
+			border-left: 3vh solid $resume-primary-color;
+		}
 
-            span.title {
-                display: block;
-                color: $resume-primary-color;
-                font-size: 0.85vh;
-    			margin: 0;
-                padding: 0;
-            }
+		.body {
+			span.title {
+				display: block;
+				margin: 0;
+				padding: 0;
+				color: $resume-primary-color;
+				font-size: 0.85vh;
+			}
 
-            p {
-                margin: 0;
-                padding: 0;
-                font-size: 1vh;
-            }
-        }
+			p {
+				margin: 0;
+				padding: 0;
+				font-size: 1.08vh;
+			}
+			margin: 0;
+			padding: 0.7vh 0 0 4vh;
+		}
 
 		.left-column {
 			width: 50%;
@@ -147,10 +151,8 @@ body.resume {
 			width: 50%;
 			float: left;
 		}
-
-        width: 100%;
+		width: 100%;
 		float: left;
 	}
-
-    font-family: $resume-primary-font;
+	font-family: $resume-primary-font;
 }
