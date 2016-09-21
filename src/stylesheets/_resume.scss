@@ -76,10 +76,11 @@ body.resume {
 	main {
 		h2 {
 			margin: 0;
-			padding: 0 0 0 4vh;
+			padding: 1.435vh 0 1.435vh 4vh;
 			font-size: 1.75vh;
 			font-weight: 800;
 			line-height: 4.62vh;
+			line-height: 1.75vh;
 		}
 
         ul > li:first-child .heading {
@@ -109,6 +110,7 @@ body.resume {
 			}
 
 			span.title {
+                clear:both;
 				font-size: 1.3vh;
 				font-weight: 600;
 				line-height: 1.6vh;
@@ -142,15 +144,27 @@ body.resume {
 			padding: 0.7vh 0 0 4vh;
 		}
 
-		.left-column {
+        .work-experience {
+
+        }
+
+        .education {
+            h2 {
+                padding-top:2vh;
+            }
+            ul > li:first-child .heading {
+    			margin: 0;
+            }
+            .heading {
+    			margin: 2vh 0 0 0;
+            }
+        }
+
+		.column {
 			width: 50%;
 			float: left;
 		}
 
-		.right-column {
-			width: 50%;
-			float: left;
-		}
 		width: 100%;
 		float: left;
 	}

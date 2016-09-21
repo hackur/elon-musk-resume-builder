@@ -110,10 +110,11 @@ body.resume {
     float: left; }
     body.resume main h2 {
       margin: 0;
-      padding: 0 0 0 4vh;
+      padding: 1.435vh 0 1.435vh 4vh;
       font-size: 1.75vh;
       font-weight: 800;
-      line-height: 4.62vh; }
+      line-height: 4.62vh;
+      line-height: 1.75vh; }
     body.resume main ul > li:first-child .heading {
       margin-top: 0; }
     body.resume main .heading {
@@ -135,6 +136,7 @@ body.resume {
         font-size: 0.85vh;
         text-align: right; }
       body.resume main .heading span.title {
+        clear: both;
         font-size: 1.3vh;
         font-weight: 600;
         line-height: 1.6vh; }
@@ -154,10 +156,13 @@ body.resume {
         margin: 0;
         padding: 0;
         font-size: 1.08vh; }
-    body.resume main .left-column {
-      width: 50%;
-      float: left; }
-    body.resume main .right-column {
+    body.resume main .education h2 {
+      padding-top: 2vh; }
+    body.resume main .education ul > li:first-child .heading {
+      margin: 0; }
+    body.resume main .education .heading {
+      margin: 2vh 0 0 0; }
+    body.resume main .column {
       width: 50%;
       float: left; }
 
