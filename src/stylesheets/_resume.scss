@@ -74,6 +74,30 @@ body.resume {
 	}
 
 	main {
+		.column {
+			width: 50%;
+			float: left;
+		}
+
+		.column-right {
+			h2 {
+				margin: 0;
+				padding-left: 0;
+			}
+
+			.heading {
+				padding: 0;
+				border: none;
+			}
+
+			.body {
+				padding: 0;
+			}
+			width: 40%;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
 		h2 {
 			margin: 0;
 			padding: 1.435vh 0 1.435vh 4vh;
@@ -83,12 +107,11 @@ body.resume {
 			line-height: 1.75vh;
 		}
 
-        ul > li:first-child .heading {
-            margin-top: 0;
-        }
+		ul > li:first-child .heading {
+			margin-top: 0;
+		}
 
 		.heading {
-
 			span {
 				display: block;
 			}
@@ -110,7 +133,7 @@ body.resume {
 			}
 
 			span.title {
-                clear:both;
+				clear: both;
 				font-size: 1.3vh;
 				font-weight: 600;
 				line-height: 1.6vh;
@@ -120,8 +143,7 @@ body.resume {
 				font-size: 1.3vh;
 				line-height: 1.6vh;
 			}
-
-			margin: 1.15vh 0 0 0;
+			margin: 1.15vh 0 0;
 			padding: 0 0 0 1vh;
 			border-left: 3vh solid $resume-primary-color;
 		}
@@ -144,112 +166,118 @@ body.resume {
 			padding: 0.7vh 0 0 4vh;
 		}
 
-        .education {
-            h2 {
-                padding-top:2vh;
-            }
-            ul > li:first-child .heading {
-    			margin: 0;
-            }
-            .heading {
-    			margin: 2vh 0 0 0;
-            }
-        }
+		.education {
+			h2 {
+				padding-top: 2vh;
+			}
 
-        .skills-and-competences {
-            padding: 0 4vh 0 4vh;
-
-            > div {
-                clear: both;
-                height: 3vh;
-                width: 100%;
-                display: inline-block;
-                vertical-align: middle;
-            }
-
-            > div.scale {
-                height: 2vh;
-                .label {
-                    display: block;
-                    float: left;
-    				margin: 0;
-    				padding: 0 2.5% 0 0;
-                    text-align: right;
-    				font-size: 1vh;
-                    width: 37.5%;
-                }
-                .progress-bar {
-                    border: none;
-    				margin: 0;
-    				padding: 0;
-                    display: block;
-                    float: left;
-                    width: 60%;
-                    height: 1vh;
-                    box-sizing: border-box;
-                    -moz-box-sizing: border-box;
-                    -webkit-box-sizing: border-box;
-                    border-right: 1px solid $resume-primary-color;
-                    > span {
-                        display: block;
-                        width: 33%;
-                        float:left;
-                        background-color: transparent;
-                        box-sizing: border-box;
-                        -moz-box-sizing: border-box;
-                        -webkit-box-sizing: border-box;
-                        border-left: 1px solid $resume-primary-color;
-                    }
-                }
-            }
-
-            .label {
-                display: block;
-                float: left;
+			ul > li:first-child .heading {
 				margin: 0;
-				padding: 0 2.5% 0 0;
-                text-align: right;
-				font-size: 1vh;
-                width: 37.5%;
-            }
+			}
 
-            .progress-bar {
-				margin: 0;
-				padding: 0;
-                display: block;
-                float: left;
-                width: 60%;
-                height: 1.4vh;
-                box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                -webkit-box-sizing: border-box;
-                border: 1px solid $resume-primary-color;
-
-                span {
-                    height: 100%;
-                    display: block;
-                    float: left;
-                    background-color: $resume-primary-color;
-                }
-            }
-        }
-
-		.column {
-			width: 50%;
-			float: left;
+			.heading {
+				margin: 2vh 0 0;
+			}
 		}
 
-        .column-right {
+		.skills-and-competences {
+			> div {
+				display: inline-block;
+				width: 100%;
+				height: 3vh;
+				clear: both;
+				vertical-align: middle;
+			}
+
+			> div.scale {
+				.label {
+					display: block;
+					width: 37.5%;
+					margin: 0;
+					padding: 0 2.5% 0 0;
+					float: left;
+					font-size: 1vh;
+					text-align: right;
+				}
+
+				.progress-bar {
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+
+					> span {
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						box-sizing: border-box;
+						display: block;
+						width: 33%;
+						float: left;
+						border-left: 1px solid $resume-primary-color;
+						background-color: transparent;
+					}
+					box-sizing: border-box;
+					display: block;
+					width: 60%;
+					height: 1vh;
+					margin: 0;
+					padding: 0;
+					float: left;
+					border: none;
+					border-right: 1px solid $resume-primary-color;
+				}
+				height: 2vh;
+			}
+
+			.label {
+				display: block;
+				width: 37.5%;
+				margin: 0;
+				padding: 0 2.5% 0 0;
+				float: left;
+				font-size: 1vh;
+				text-align: right;
+			}
+
+			.progress-bar {
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+
+				span {
+					display: block;
+					height: 100%;
+					float: left;
+					background-color: $resume-primary-color;
+				}
+				box-sizing: border-box;
+				display: block;
+				width: 60%;
+				height: 1.4vh;
+				margin: 0;
+				padding: 0;
+				float: left;
+				border: 1px solid $resume-primary-color;
+			}
+			padding: 0;
+		}
+        .achievements-and-certificates {
+
             h2 {
-                margin: 0;
-                padding-left: 0;
+                padding-bottom: 1vh;
             }
-            .heading {
-                border: none;
-                padding: 0;
+
+            > div {
+                padding: 0.3vh 0;
+                .heading {
+    				margin: 0;
+    				padding: 0;
+    				font-size: 1.15vh;
+                }
+                .body {
+    				margin: 0;
+    				padding: 0;
+    				font-size: 0.9vh;
+                }
             }
         }
-
 		width: 100%;
 		float: left;
 	}
