@@ -30,8 +30,8 @@ function onClosed() {
 
 function createMainWindow() {
 	const win = new BrowserWindow({
-		width: 850*0.75,
-		height: 1100*0.75,
+		width: 850,
+		height: 1100,
         minWidth: 425,
         minHeight: 550,
         titleBarStyle: 'hidden-inset'
