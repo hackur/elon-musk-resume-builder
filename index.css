@@ -113,8 +113,8 @@ body.resume {
       float: left; }
     body.resume main .column-right {
       width: 40%;
-      padding-left: 5%;
-      padding-right: 5%; }
+      padding-right: 5%;
+      padding-left: 5%; }
       body.resume main .column-right h2 {
         margin: 0;
         padding-left: 0; }
@@ -252,5 +252,17 @@ body.resume {
         margin: 0;
         padding: 0;
         font-size: 0.9vh; }
+    body.resume main .languages > div {
+      margin-bottom: 1vh;
+      font-size: 1.08vh; }
+      body.resume main .languages > div span {
+        display: block;
+        float: left;
+        width: 33%; }
+    body.resume main .interests {
+      font-size: 1.08vh;
+      line-height: 1.5vh; }
+      body.resume main .interests span {
+        word-spacing: 0.2vh; }
 
 /*# sourceMappingURL=index.map */

@@ -94,8 +94,8 @@ body.resume {
 				padding: 0;
 			}
 			width: 40%;
-			padding-left: 5%;
 			padding-right: 5%;
+			padding-left: 5%;
 		}
 
 		h2 {
@@ -258,24 +258,43 @@ body.resume {
 			}
 			padding: 0;
 		}
-        .achievements-and-certificates {
 
-            h2 {
-                padding-bottom: 1vh;
-            }
+		.achievements-and-certificates {
+			h2 {
+				padding-bottom: 1vh;
+			}
 
+			> div {
+				.heading {
+					margin: 0;
+					padding: 0;
+					font-size: 1.15vh;
+				}
+
+				.body {
+					margin: 0;
+					padding: 0;
+					font-size: 0.9vh;
+				}
+				padding: 0.3vh 0;
+			}
+		}
+		.languages {
             > div {
-                padding: 0.3vh 0;
-                .heading {
-    				margin: 0;
-    				padding: 0;
-    				font-size: 1.15vh;
+                margin-bottom: 1vh;
+                font-size: 1.08vh;
+                span {
+                    display: block;
+                    float:left;
+                    width: 33%;
                 }
-                .body {
-    				margin: 0;
-    				padding: 0;
-    				font-size: 0.9vh;
-                }
+            }
+        }
+		.interests {
+            font-size: 1.08vh;
+            line-height: 1.5vh;
+            span {
+                word-spacing: 0.2vh;
             }
         }
 		width: 100%;
