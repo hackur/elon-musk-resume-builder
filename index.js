@@ -1,13 +1,17 @@
 'use strict';
-const electron = require('electron')
-const {app, BrowserWindow, crashReporter} = electron
+const {
+	app,
+	BrowserWindow,
+	crashReporter
+} = require('electron')
+const fs = require('fs')
 
 // report crashes to the Electron project
 crashReporter.start({
-  productName: 'elon-musk-resume-builder',
-  companyName: 'JeremySarda.com',
-  submitURL: 'https://resume.jeremysarda.com/crash-report',
-  autoSubmit: true
+	productName: 'elon-musk-resume-builder',
+	companyName: 'JeremySarda.com',
+	submitURL: 'https://resume.jeremysarda.com/crash-report',
+	autoSubmit: true
 });
 
 // adds debug features like hotkeys for triggering dev tools and reload
@@ -32,9 +36,9 @@ function createMainWindow() {
 	const win = new BrowserWindow({
 		width: 850,
 		height: 1100,
-        minWidth: 425,
-        minHeight: 550,
-        titleBarStyle: 'hidden-inset'
+		minWidth: 425,
+		minHeight: 550,
+		titleBarStyle: 'hidden-inset'
 	});
 
 	if (process.env['NODE_ENV'] == 'dev') {
@@ -48,8 +52,8 @@ function createMainWindow() {
 
 	win.on('closed', onClosed);
 
-    // Only works on OS X
-    win.setAspectRatio(8.5/11, []);
+	// Only works on OS X
+	win.setAspectRatio(8.5 / 11, []);
 
 	return win;
 }

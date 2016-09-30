@@ -1,28 +1,25 @@
-# elon-musk-resume-builder
+# Elon Musk Resume Builder
 
-> My badass app
+A web-based clone of Elon Musk's famous one page resume - exportable to PDF.
 
+## Development - Build & Run
 
-## Dev
+Installs the required node packages and runs the application along with a browsersync watcher.
+
 
 ```
 $ npm install
-```
-
-### Run
-
-```
 $ npm start
 ```
 
-### Build
+### Production - Build Distribution Packages
+
+Builds the app for OS X, Linux, and Windows, using [electron-packager](https://github.com/maxogden/electron-packager).
+
 
 ```
 $ npm run build
 ```
-
-Builds the app for OS X, Linux, and Windows, using [electron-packager](https://github.com/maxogden/electron-packager).
-
 
 ## License
 

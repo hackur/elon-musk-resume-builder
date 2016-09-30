@@ -34,7 +34,7 @@ body.editor {
     font-weight: 100;
     line-height: 35px;
     text-align: center; }
-  body.editor iframe.document {
+  body.editor .document {
     display: inline-block;
     width: calc(80vh - 75px);
     height: calc(100vh - 85px);
@@ -44,6 +44,8 @@ body.editor {
     vertical-align: middle; }
 
 body.resume {
+  margin: 0;
+  padding: 0;
   font-family: "Ubuntu", Helvetica, sans-serif; }
   body.resume header {
     height: 10.25vh;
