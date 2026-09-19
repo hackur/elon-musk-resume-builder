@@ -1,3 +1,5 @@
+
+
 # Elon Musk Resume Builder
 
 A web-based clone of Elon Musk's famous one page resume - exportable to PDF.
@@ -20,6 +22,8 @@ Builds the app for OS X, Linux, and Windows, using [electron-packager](https://g
 ```
 $ npm run build
 ```
+
+The built packages are written to the `dist` directory.
 
 ## License
 
